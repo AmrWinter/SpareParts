@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <CustomControl.myTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/chooseBrand"
+        android:textSize="15sp"
+        android:id="@+id/tvChooseBrand"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@android:drawable/ic_input_add"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"/>
+
+    <GridView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/gvBrands"
+        android:scrollbars="none"
+        android:numColumns="2"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:background="@color/grid_divider_color"
+        android:layout_below="@+id/tvChooseBrand"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        app:layout_widthPercent="80%"/>
+
+</android.support.percent.PercentRelativeLayout>

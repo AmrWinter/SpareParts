@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/header_height"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/tools">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:id="@+id/myactionbar"
+    android:background="@color/actionBarColor">
+
+    <!--<com.andexert.library.RippleView-->
+        <!--android:id="@+id/more"-->
+        <!--android:layout_width="?android:actionBarSize"-->
+        <!--android:layout_height="?android:actionBarSize"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--rv_centered="true">-->
+    <com.andexert.library.RippleView
+        android:id="@+id/rBack"
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="50dp"
+        rv_centered="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true">
+
+    </com.andexert.library.RippleView>
+
+
+    <com.andexert.library.RippleView
+        android:id="@+id/rNavigation"
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="50dp"
+        rv_centered="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:id="@+id/ivNavigationDrawer"
+        android:src="@drawable/navigation_drawer_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="7dp" />
+    </com.andexert.library.RippleView>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="45dp"
+        android:id="@+id/ivBack"
+        android:layout_marginEnd="7dp"
+        android:src="@drawable/back_icon"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/rBack" />
+
+
+</RelativeLayout>
+
+    <Libs.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_height"
+        android:layout_below="@+id/myactionbar"
+        android:layout_alignParentStart="true" />
+    <Libs.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        selected_color="#555555"
+        unselected_color="#55555555"
+        shape="oval"
+        selected_padding_left="3dp"
+        selected_padding_right="3dp"
+        unselected_padding_left="3dp"
+        unselected_padding_right="3dp"
+        selected_width="8dp"
+        selected_height="8dp"
+        unselected_width="4dp"
+        unselected_height="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
