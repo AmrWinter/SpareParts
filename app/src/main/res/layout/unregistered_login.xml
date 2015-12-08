@@ -23,7 +23,7 @@
         android:layout_below="@+id/ivlogin_img"
         android:layout_marginLeft="7dp"
         android:layout_marginRight="7dp"
-        android:layout_margin="15dp"
+        android:layout_margin="20dp"
         android:layout_centerHorizontal="true"/>
 
     <CustomControl.myEditText3
