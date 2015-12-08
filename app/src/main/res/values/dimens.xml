@@ -14,7 +14,7 @@
 
 
     <dimen name="buttons_size">20sp</dimen>
-    <dimen name="et_fontsize">15sp</dimen>
-    <dimen name="etMargin">10dp</dimen>
+    <dimen name="et_fontsize">10sp</dimen>
+    <dimen name="etMargin">5dp</dimen>
     <dimen name="buttonMargin">17dp</dimen>
 </resources>

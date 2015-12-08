@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/ivlogin_img"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <CustomControl.myEditText3
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="88%"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/email"
+        android:textSize="15sp"
+        android:id="@+id/tvMail"
+        android:layout_below="@+id/ivlogin_img"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <CustomControl.myEditText3
+        android:layout_width="wrap_content"
+        app:layout_widthPercent="88%"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/pass"
+        android:textSize="15sp"
+        android:id="@+id/tvPass"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_below="@+id/tvMail"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"/>
+    />
+
+
+    <CustomControl.myButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="إستعادة كلمة المرور"
+        android:textAlignment="center"
+        android:id="@+id/retrieve_password"
+        app:layout_widthPercent="46%"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_alignBottom="@+id/view"
+        android:layout_toStartOf="@+id/view" />
+<android.support.v4.widget.Space
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:id="@+id/view"
+    android:layout_below="@+id/log_in"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="41dp" />
+    <CustomControl.myButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="عضوية جديدة"
+        android:textAlignment="center"
+        android:id="@+id/new_member"
+        app:layout_widthPercent="46%"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+
+        android:layout_alignBottom="@+id/view"
+        android:layout_toEndOf="@+id/view" />
+    <CustomControl.myButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تسجيل الدخول"
+        android:textAlignment="center"
+        android:id="@+id/log_in"
+
+        android:layout_gravity="center_horizontal"
+
+        app:layout_widthPercent="50%"
+        android:layout_marginTop="84dp"
+        android:layout_below="@+id/tvPass"
+        android:layout_alignStart="@+id/tvMail" />
+
+</RelativeLayout>

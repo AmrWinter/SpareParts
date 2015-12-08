@@ -24,7 +24,7 @@ public class unregistered_Brands_Grid extends Fragment{
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        Brands_Grid_View = inflater.inflate(R.layout.unregistered_register, container, false);
+        Brands_Grid_View = inflater.inflate(R.layout.brands_grid_layout, container, false);
         initVals();
         return Brands_Grid_View;
     }

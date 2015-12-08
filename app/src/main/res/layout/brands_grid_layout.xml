@@ -5,7 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF">
-
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/hand_icon"
+    android:layout_toStartOf="@+id/tvChooseBrand"
+    android:scaleType="centerInside"
+    android:layout_alignTop="@+id/tvChooseBrand"
+    android:layout_alignBottom="@+id/tvChooseBrand" />
     <CustomControl.myTextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -14,12 +21,13 @@
         android:textSize="15sp"
         android:id="@+id/tvChooseBrand"
         android:layout_gravity="center_horizontal"
-        android:drawableStart="@android:drawable/ic_input_add"
-        android:layout_marginLeft="7dp"
-        android:layout_marginRight="7dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_margin="15dp"/>
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginStart="0dp"
+        />
 
     <GridView
         android:layout_width="0dp"

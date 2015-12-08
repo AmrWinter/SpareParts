@@ -8,4 +8,6 @@
     <string name="action_settings">Settings</string>
     <string name="login">تسجيل الدخول</string>
     <string name="chooseBrand">اختر ماركة السيارة</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="pass">كلمة المرور</string>
 </resources>
